@@ -1,0 +1,41 @@
+# Syntax highlighting for this file in Atom
+# -*- grammar-ext: .sh -*-
+
+# File Navigation & Management
+alias disklist='diskutil list'
+alias edit='sudo nano'
+alias ls='ls -a'
+alias mkdir='mkdir -p'
+alias chown='chown -Rv'
+alias chmod='chmod -Rv'
+
+# Edit common files in Atom
+alias aliases='atom ~/.aliases'
+alias zshrc='atom ~/.zshrc'
+
+# Updates
+alias brewup='brew update && brew upgrade'
+alias ciderup='cider missing && cider tap missing && cider cask missing'
+alias composerup='composer selfupdate && composer global update'
+
+# Composer/PHP
+alias composerdump='composer dumpautoload --optimize'
+alias composerproject='composer create-project'
+alias psysh='~/.composer/vendor/psy/psysh/bin/psysh'
+
+# Couscous
+alias ccpreview='couscous preview'
+alias ccdeploy='couscous deploy'
+
+# dnsmasq
+alias masqstart='sudo launchctl start homebrew.mxcl.dnsmasq'
+alias masqstop='sudo launchctl stop homebrew.mxcl.dnsmasq'
+alias masqrestart='masqstop && masqstart'
+alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
+
+# Vaprozsh
+alias vz='cd ~/vaprozsh'
+alias vzwww='vz && cd www'
+alias vzssh='vz && vagrant ssh'
+alias vzup='vz && vagrant up'
+alias vzhalt='vz && vagrant halt'

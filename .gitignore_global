@@ -1,0 +1,16 @@
+# Folder view, spotlight, external disk junk, etc.
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Log files
+*.log
+error_log
+
+# Node
+node_modules
+
+# Python
+*.pyc
