@@ -21,11 +21,6 @@ alias composerup='composer selfupdate && composer global update'
 # Composer/PHP
 alias composerdump='composer dumpautoload --optimize'
 alias composerproject='composer create-project'
-alias psysh='~/.composer/vendor/psy/psysh/bin/psysh'
-
-# Couscous
-alias ccpreview='couscous preview'
-alias ccdeploy='couscous deploy'
 
 # dnsmasq
 alias masqstart='sudo launchctl start homebrew.mxcl.dnsmasq'
