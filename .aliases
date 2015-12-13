@@ -18,7 +18,7 @@ alias brewup='brew update && brew upgrade'
 alias ciderup='cider missing && cider tap missing && cider cask missing'
 alias composerup='composer selfupdate && composer global update'
 
-# Composer/PHP
+# Composer
 alias composerdump='composer dumpautoload --optimize'
 alias composerproject='composer create-project'
 
@@ -27,6 +27,14 @@ alias masqstart='sudo launchctl start homebrew.mxcl.dnsmasq'
 alias masqstop='sudo launchctl stop homebrew.mxcl.dnsmasq'
 alias masqrestart='masqstop && masqstart'
 alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
+
+# nginx & PHP
+alias ngstart='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
+alias ngstop='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
+alias ngrestart='ngstop && ngstart'
+alias phpstart="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist"
+alias phpstop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist"
+alias phprestart='phpstop && phpstart'
 
 # Vaprozsh
 alias vz='cd ~/vaprozsh'
