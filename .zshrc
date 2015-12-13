@@ -21,4 +21,4 @@ antigen apply
 
 source $HOME/.aliases
 
-export PATH="~/.composer/vendor/bin:/Users/Hannah/.node/bin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$HOME/.composer/vendor/bin:$HOME/.node/bin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin"
