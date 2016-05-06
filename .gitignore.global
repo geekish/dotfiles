@@ -5,6 +5,9 @@
 .Spotlight-V100
 .Trashes
 
+# Version control
+.git
+
 # Log files
 *.log
 error_log
@@ -12,5 +15,16 @@ error_log
 # Node
 node_modules
 
+# PHP/phpStorm
+.env
+.idea
+composer.phar
+
 # Python
 *.pyc
+
+# SASS
+.sass_cache
+
+# Ulysses
+.Ulysses-Group.plist
