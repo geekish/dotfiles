@@ -4,6 +4,7 @@ source $HOME/.zsh-antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
+antigen bundle composer
 antigen bundle git
 antigen bundle git-extras
 antigen bundle git-flow
@@ -21,4 +22,8 @@ antigen apply
 
 source $HOME/.aliases
 
-export PATH="$HOME/.composer/vendor/bin:$HOME/.node/bin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+if [[ -r ~/.zshrc.local ]]; then
+    source ~/.zshrc.local
+fi
+
+export PATH="$HOME/.composer/vendor/bin:$HOME/.node/bin:/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
