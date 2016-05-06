@@ -1,44 +1,83 @@
-# Syntax highlighting for this file in Atom
+# Syntax highlighting for this file in Atom [grammar-mode]
 # -*- grammar-ext: .sh -*-
 
-# File Navigation & Management
-alias disklist='diskutil list'
-alias edit='sudo nano'
-alias ls='ls -a'
-alias mkdir='mkdir -p'
-alias chown='chown -Rv'
-alias chmod='chmod -Rv'
+alias -g aliases="~/.aliases"
+alias -g zshrc="~/.zshrc"
+alias reload=". ~/.zshrc"
 
-# Edit common files in Atom
-alias aliases='atom ~/.aliases'
-alias zshrc='atom ~/.zshrc'
+###############################################################################
+# FILE MANAGEMENT & NAVIGATION
+###############################################################################
 
-# Updates
-alias brewup='brew update && brew upgrade'
-alias ciderup='cider missing && cider tap missing && cider cask missing'
-alias composerup='composer selfupdate && composer global update'
+alias chmod="chmod -Rv"
+alias chown="chown -Rv"
+alias chx="chmod a+x"
+alias disklist="diskutil list"
+alias edit="sudo nano"
+alias ls="ls -a"
+alias mkdir="mkdir -p"
+alias rmdir="rm -rf" # don't be stupid
 
-# Composer
-alias composerdump='composer dumpautoload --optimize'
-alias composerproject='composer create-project'
+###############################################################################
+# HOMEBREW
+###############################################################################
+
+alias brewup="brew update && brew upgrade"
 
 # dnsmasq
-alias masqstart='sudo launchctl start homebrew.mxcl.dnsmasq'
-alias masqstop='sudo launchctl stop homebrew.mxcl.dnsmasq'
-alias masqrestart='masqstop && masqstart'
-alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
+alias masqstart="sudo brew services start dnsmasq"
+alias masqstop="sudo brew services stop dnsmasq"
+alias masqrestart="sudo brew services dnsmasq"
 
-# nginx & PHP
-alias ngstart='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
-alias ngstop='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
-alias ngrestart='ngstop && ngstart'
-alias phpstart="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist"
-alias phpstop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php70.plist"
-alias phprestart='phpstop && phpstart'
+# mongodb
+alias mongostart="sudo brew services start mongodb"
+alias mongostop="sudo brew services stop mongodb"
+alias mongorestart="sudo brew services mongodb"
 
-# Vaprozsh
-alias vz='cd ~/vaprozsh'
-alias vzwww='vz && cd www'
-alias vzssh='vz && vagrant ssh'
-alias vzup='vz && vagrant up'
-alias vzhalt='vz && vagrant halt'
+# mysql
+alias mysqlstart="brew services start mysql"
+alias mysqlstop="brew services stop mysql"
+alias mysqlrestart="brew services restart mysql"
+
+# nginx
+alias ngstart="sudo brew services start nginx"
+alias ngstop="sudo brew services stop nginx"
+alias ngrestart="sudo brew services restart nginx"
+
+# php
+alias phpstart="brew services start php70"
+alias phpstop="brew services stop php70"
+alias phprestart="brew services restart php70"
+
+# postgresql
+alias pgsqlstart="brew services start postgresql"
+alias pgsqlstop="brew services stop postgresql"
+alias pgsqlrestart="brew services restart postgresql"
+
+###############################################################################
+# NETWORKING
+###############################################################################
+
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+
+###############################################################################
+# PHP/COMPOSER
+###############################################################################
+
+alias composerup="composer self-update && composer global update"
+
+alias dump="composer dumpautoload --optimize"
+alias project="composer create-project"
+alias require="composer require"
+
+alias phpv="php -v"
+
+###############################################################################
+# VAGRANT
+###############################################################################
+
+alias vaprozsh="cd ~/vaprozsh"
+alias vzwww="vaprozsh && cd www"
+alias vzssh="vaprozsh && vagrant ssh"
+alias vzup="vaprozsh && vagrant up"
+alias vzhalt="vaprozsh && vagrant halt"
