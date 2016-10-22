@@ -1,8 +1,6 @@
 # Syntax highlighting for this file in Atom [grammar-mode]
 # -*- grammar-ext: .sh -*-
 
-alias -g aliases="~/.aliases"
-alias -g zshrc="~/.zshrc"
 alias reload=". ~/.zshrc"
 
 ###############################################################################

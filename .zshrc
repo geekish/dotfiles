@@ -22,10 +22,11 @@ antigen theme zenorocha/dracula-theme zsh/dracula
 
 antigen apply
 
-source $HOME/.aliases
-
 if [[ -r ~/.zshrc.local ]]; then
     source ~/.zshrc.local
 fi
 
-export PATH="$HOME/.composer/vendor/bin:$HOME/.node/bin:/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+source $HOME/.zsh-globals
+source $HOME/.zsh-aliases
+
+export PATH="$HOME/.composer/vendor/bin:/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
