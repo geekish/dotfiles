@@ -76,7 +76,8 @@ alias phpv="php -v"
 # VAGRANT
 ###############################################################################
 
-alias vaprozsh="cd ~/vaprozsh"
+alias -g vaprozsh="~/vaprozsh"
+
 alias vzwww="vaprozsh && cd www"
 alias vzssh="vaprozsh && vagrant ssh"
 alias vzup="vaprozsh && vagrant up"
