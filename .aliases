@@ -27,12 +27,12 @@ alias brewup="brew update && brew upgrade"
 # dnsmasq
 alias masqstart="sudo brew services start dnsmasq"
 alias masqstop="sudo brew services stop dnsmasq"
-alias masqrestart="sudo brew services dnsmasq"
+alias masqrestart="sudo brew services restart dnsmasq"
 
 # mongodb
 alias mongostart="sudo brew services start mongodb"
 alias mongostop="sudo brew services stop mongodb"
-alias mongorestart="sudo brew services mongodb"
+alias mongorestart="sudo brew services restart mongodb"
 
 # mysql
 alias mysqlstart="brew services start mysql"
