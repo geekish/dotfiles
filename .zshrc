@@ -4,6 +4,12 @@ source $HOME/.zsh-antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
+if [ "$OSTYPE"="darwin11.0" ]; then
+    antigen bundle brew
+    antigen bundle osx
+    antigen bundle vagrant
+fi
+
 antigen bundle composer
 antigen bundle git
 antigen bundle git-extras
@@ -11,10 +17,6 @@ antigen bundle git-flow
 antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
-
-antigen bundle brew
-antigen bundle osx
-antigen bundle vagrant
 
 antigen theme zenorocha/dracula-theme zsh/dracula
 
