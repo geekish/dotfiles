@@ -2,7 +2,7 @@
 
 My dotfiles. I hope to expand this to fully bootstrap new machines, both Mac and Linux, but for now it just serves as a central point for me to copy/paste configuration.
 
-##### `Files`
+#### Files
 
 - `.gitconfig` - git config
 - `.gitconfig.local` - stuff that belongs in `.gitconfig` but not in version control
@@ -14,13 +14,13 @@ My dotfiles. I hope to expand this to fully bootstrap new machines, both Mac and
 
 `.gitignore` and `.editorconfig` are local to this repository.
 
-##### `Todo`
+#### Todo
 
 - [ ] Install script of some sort.
  - [Cider](//github.com/msanders/cider) for Homebrew setup?
  - Setup with Composer? See  [slbmeh/dotfiles](//github.com/slbmeh/dotfiles).
 
-##### `Notes`
+#### Notes
 
 - Must install [Kaleidoscope](//kaleidoscopeapp.com) command line tools for git diff/merge to work:
         Kaleidoscope > Integration... > Kaleidoscope Command-Line Tool (ksdiff)
