@@ -16,9 +16,8 @@ My dotfiles. I hope to expand this to fully bootstrap new machines, both Mac and
 
 #### Todo
 
-- [ ] Install script of some sort.
- - [Cider](//github.com/msanders/cider) for Homebrew setup?
- - Setup with Composer? See  [slbmeh/dotfiles](//github.com/slbmeh/dotfiles).
+- [ ] Add [Atom](//atom.io) configuration.
+- [ ] Install script of some sort. [Cider](//github.com/msanders/cider)? [Composer](//github.com/slbmeh/dotfiles)?
 
 #### Notes
 
