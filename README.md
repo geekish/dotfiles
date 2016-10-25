@@ -4,12 +4,13 @@ My dotfiles. I hope to expand this to fully bootstrap new machines, both Mac and
 
 ##### `Files`
 
-- `.aliases` - shell command aliases, sourced in `.zshrc`
 - `.gitconfig` - git config
 - `.gitconfig.local` - stuff that belongs in `.gitconfig` but not in version control
 - `.gitignore.global` - my `.gitconfig` `excludesfile`
 - `.zshrc` - zsh config
 - `.zshrc.local` - stuff that belongs in `.zshrc` but not in version control
+- `.zsh-aliases` - shell command aliases, sourced in `.zshrc`
+- `.zsh-globals` - global aliases, also sourced in `.zshrc`
 
 `.gitignore` and `.editorconfig` are local to this repository.
 
