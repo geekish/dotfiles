@@ -5,12 +5,10 @@ source $HOME/.zsh-antigen/antigen.zsh
 antigen use oh-my-zsh
 
 if [ "$OSTYPE"="darwin11.0" ]; then
-    antigen bundle brew
     antigen bundle osx
     antigen bundle vagrant
 fi
 
-antigen bundle composer
 antigen bundle git
 antigen bundle git-extras
 antigen bundle git-flow
