@@ -12,6 +12,7 @@ alias chown="chown -Rv"
 alias chx="chmod a+x"
 alias disklist="diskutil list"
 alias edit="sudo nano"
+alias editcrontab="export VISUAL=nano; crontab -e"
 alias ls="ls -a"
 alias mkdir="mkdir -p"
 alias rmdir="rm -rf" # don't be stupid
