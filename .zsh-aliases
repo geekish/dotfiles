@@ -41,7 +41,7 @@ alias mysqlrestart="brew services restart mysql"
 # nginx
 alias ngstart="sudo brew services start nginx"
 alias ngstop="sudo brew services stop nginx"
-alias ngrestart="sudo brew services restart nginx"
+alias ngrestart="sudo nginx -t && sudo brew services restart nginx"
 
 # php
 alias phpstart="brew services start php70"
