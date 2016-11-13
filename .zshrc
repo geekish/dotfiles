@@ -18,7 +18,7 @@ antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 
-antigen theme zenorocha/dracula-theme zsh/dracula
+antigen theme dracula/zsh dracula
 
 antigen apply
 
