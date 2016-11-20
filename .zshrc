@@ -1,6 +1,6 @@
 export LANG=en_US.UTF-8
 
-source $HOME/.zsh-antigen/antigen.zsh
+source $(brew --prefix)/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
