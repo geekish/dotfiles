@@ -1,7 +1,10 @@
 # Syntax highlighting for this file in Atom [grammar-mode]
 # -*- grammar-ext: .sh -*-
 
-alias reload=". ~/.zshrc"
+alias -g zshrc='~/.zshrc'
+alias -g www='/var/www'
+
+alias reload=". zshrc"
 
 ###############################################################################
 # FILE MANAGEMENT & NAVIGATION
@@ -63,11 +66,16 @@ alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 # PHP/COMPOSER
 ###############################################################################
 
-alias composerup="composer self-update && composer global update"
+alias composer="noglob composer"
+alias crap="noglob crap"
 
+alias composerup="composer self-update && composer global update"
 alias dump="composer dumpautoload --optimize"
 alias project="composer create-project"
-alias require="composer require"
+
+alias xdstatus="xdebug-toggle"
+alias xdon="xdebug-toggle on --no-server-restart && phprestart"
+alias xdoff="xdebug-toggle off --no-server-restart && phprestart"
 
 alias phpv="php -v"
 
