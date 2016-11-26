@@ -10,12 +10,12 @@ alias reload=". zshrc"
 # FILE MANAGEMENT & NAVIGATION
 ###############################################################################
 
+function cdl { cd "$1" && ls -a; }
 alias chmod="chmod -Rv"
 alias chown="chown -Rv"
 alias chx="chmod a+x"
 alias disklist="diskutil list"
 alias edit="sudo nano"
-alias editcrontab="export VISUAL=nano; crontab -e"
 alias ls="ls -a"
 alias mkdir="mkdir -p"
 alias rmdir="rm -rf" # don't be stupid
@@ -24,7 +24,7 @@ alias rmdir="rm -rf" # don't be stupid
 # HOMEBREW
 ###############################################################################
 
-alias brewup="brew update && brew upgrade"
+alias brewup="brew update && brew upgrade && brew cleanup"
 
 # dnsmasq
 alias masqstart="sudo brew services start dnsmasq"
@@ -72,6 +72,7 @@ alias crap="noglob crap"
 alias composerup="composer self-update && composer global update"
 alias dump="composer dumpautoload --optimize"
 alias project="composer create-project"
+alias require="composer require"
 
 alias xdstatus="xdebug-toggle"
 alias xdon="xdebug-toggle on --no-server-restart && phprestart"
@@ -89,3 +90,10 @@ alias vzwww="vaprozsh && cd www"
 alias vzssh="vaprozsh && vagrant ssh"
 alias vzup="vaprozsh && vagrant up"
 alias vzhalt="vaprozsh && vagrant halt"
+
+###############################################################################
+# MISCELLANEOUS
+###############################################################################
+
+alias editcrontab="export VISUAL=nano; crontab -e"
+alias record="asciinema rec"
