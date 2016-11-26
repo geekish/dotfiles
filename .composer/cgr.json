@@ -1,0 +1,10 @@
+{
+    "require": {
+        "couscous/couscous": "^1.5",
+        "fabpot/php-cs-fixer": "^1.11",
+        "phpmd/phpmd": "^2.4",
+        "phpunit/phpunit": "^5.3",
+        "psy/psysh": "^0.7",
+        "squizlabs/php_codesniffer": "^2.6"
+    }
+}

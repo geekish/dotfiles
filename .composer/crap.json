@@ -1,0 +1,18 @@
+{
+    "batterystaple": "yuloh/battery-staple",
+    "couscous": "couscous/couscous:^1.5",
+    "csrf": "paragonie/anti-csrf:^2.0.1",
+    "diactoros": "zendframework/zend-diactoros",
+    "faker": "fzaninotto/faker",
+    "fakerbs": "geekish/faker-horse-battery-staple",
+    "guzzle": "guzzlehttp/guzzle:^6.0",
+    "monolog": "monolog/monolog",
+    "phpcs": "squizlabs/php_codesniffer",
+    "robo": "consolidation/robo",
+    "robophpcs": "cheppers/robo-phpcs",
+    "sculpin": "sculpin/sculpin:^2.0",
+    "silly": "mnapoli/silly:^1.5",
+    "slim": "slim/slim:^3.6",
+    "slimbox": "geekish/slimbox",
+    "unbox": "mindplay/unbox:^2.0"
+}
