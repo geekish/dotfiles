@@ -1,30 +1,34 @@
-# Folder view, spotlight, external disk junk, etc.
+# macOS/Finder
 .DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
-
-# Version control
-.git
+.trash
 
 # Log files
 *.log
 error_log
 
-# Node
+# Node/Assets
+.sass-cache
+bower_components
 node_modules
+codekit.config
+codekit.config3
 
 # PHP/phpStorm
-.env
 .idea
 composer.phar
 
 # Python
 *.pyc
 
-# SASS
-.sass_cache
+# Secrets
+.env
 
 # Ulysses
 .Ulysses-Group.plist
+
+# Version control
+.git
