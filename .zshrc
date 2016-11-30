@@ -9,10 +9,13 @@ if [ "$OSTYPE"="darwin11.0" ]; then
     antigen bundle vagrant
 fi
 
+antigen bundle battery
+antigen bundle command-not-found
 antigen bundle git
+antigen bundle github
 antigen bundle git-extras
 antigen bundle git-flow
-antigen bundle command-not-found
+antigen bundle rbirnie/oh-my-zsh-keybase keybase
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 
