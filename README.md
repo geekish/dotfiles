@@ -4,11 +4,13 @@ My dotfiles. I hope to expand this to fully bootstrap new machines, both Mac and
 
 #### Files
 
-- `.composer`
+- `.composer/`
     - `cgr.json` - no actual function, just a reference to what I have installed using [cgr]
     - `composer.json` - global composer.json, not much in here thanks to [cgr]
     - `config.json` - global [Composer] config
     - `crap.json` - used by [crap]
+- `bin/`
+    - `project.sh` - creates a new PHP project from [league/skeleton]
 - `.gitconfig` - git config
 - `.gitconfig.local` - stuff that belongs in `.gitconfig` but not in version control
 - `.gitignore.global` - my `.gitconfig` `excludesfile`
@@ -30,3 +32,4 @@ My dotfiles. I hope to expand this to fully bootstrap new machines, both Mac and
 [cgr]: //github.com/consolidation/cgr
 [composer]: //getcomposer.org
 [crap]: //github.com/geekish/crap
+[league/skeleton]: http://github.com/thephpleague/skeleton

@@ -29,4 +29,4 @@ fi
 
 source $HOME/.zsh-aliases
 
-export PATH="$HOME/.composer/vendor/bin:/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$HOME/bin:$HOME/.composer/vendor/bin:/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
