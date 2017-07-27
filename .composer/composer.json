@@ -1,8 +1,10 @@
 {
     "require": {
-        "consolidation/cgr": "^1.3",
-        "geekish/crap": "^1.0.0@beta",
-        "hirak/prestissimo": "^0.3.5"
+        "consolidation/cgr": "^2.0",
+        "hirak/prestissimo": "^0.3.7"
+    },
+    "config": {
+        "sort-packages": true
     },
     "minimum-stability": "beta",
     "prefer-stable": true
