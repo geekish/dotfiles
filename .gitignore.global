@@ -1,6 +1,5 @@
 # macOS/Finder
 .DS_Store
-.DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
@@ -12,12 +11,9 @@ error_log
 
 # Node/Assets
 .sass-cache
-bower_components
 node_modules
-codekit.config
-codekit.config3
 
-# PHP/phpStorm
+# PHP/PhpStorm
 .idea
 composer.phar
 
@@ -26,9 +22,6 @@ composer.phar
 
 # Secrets
 .env
-
-# Ulysses
-.Ulysses-Group.plist
 
 # Version control
 .git
