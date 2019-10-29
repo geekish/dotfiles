@@ -16,3 +16,6 @@
 [mergetool "Kaleidoscope"]
   cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustexitcode = true
+[user]
+  name = Hannah Warmbier
+  email = hannahwarmbier@gmail.com
