@@ -1,10 +1,7 @@
 # Syntax highlighting for this file in Atom [grammar-mode]
 # -*- grammar-ext: .sh -*-
 
-alias -g zshrc='~/.zshrc'
-alias -g www='/var/www'
-
-alias reload=". zshrc"
+alias reload="~/.zshrc"
 
 ###############################################################################
 # FILE MANAGEMENT & NAVIGATION
@@ -14,7 +11,6 @@ function cdl { cd "$1" && ls -a; }
 alias chmod="chmod -Rv"
 alias chown="chown -Rv"
 alias chx="chmod a+x"
-alias disklist="diskutil list"
 alias edit="sudo nano"
 alias ls="ls -a"
 alias mkdir="mkdir -p"
@@ -30,11 +26,6 @@ alias brewup="brew update && brew upgrade && brew cleanup"
 alias masqstart="sudo brew services start dnsmasq"
 alias masqstop="sudo brew services stop dnsmasq"
 alias masqrestart="sudo brew services restart dnsmasq"
-
-# mongodb
-alias mongostart="sudo brew services start mongodb"
-alias mongostop="sudo brew services stop mongodb"
-alias mongorestart="sudo brew services restart mongodb"
 
 # mysql
 alias mysqlstart="brew services start mysql"
@@ -67,29 +58,12 @@ alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 ###############################################################################
 
 alias composer="noglob composer"
-alias crap="noglob crap"
+# alias crap="noglob crap"
 
-alias composerup="composer self-update && composer global update"
+alias composerup="composer self-update"
 alias dump="composer dumpautoload --optimize"
 alias project="composer create-project"
 alias require="composer require"
-
-alias xdstatus="xdebug-toggle"
-alias xdon="xdebug-toggle on --no-server-restart && phprestart"
-alias xdoff="xdebug-toggle off --no-server-restart && phprestart"
-
-alias phpv="php -v"
-
-###############################################################################
-# VAGRANT
-###############################################################################
-
-alias -g vaprozsh="~/vaprozsh"
-
-alias vzwww="vaprozsh && cd www"
-alias vzssh="vaprozsh && vagrant ssh"
-alias vzup="vaprozsh && vagrant up"
-alias vzhalt="vaprozsh && vagrant halt"
 
 ###############################################################################
 # MISCELLANEOUS
