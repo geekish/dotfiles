@@ -47,9 +47,9 @@ alias ngstop="sudo brew services stop nginx"
 alias ngrestart="sudo nginx -t && sudo brew services restart nginx"
 
 # php
-alias phpstart="brew services start php71"
-alias phpstop="brew services stop php71"
-alias phprestart="brew services restart php71"
+alias phpstart="brew services start php"
+alias phpstop="brew services stop php"
+alias phprestart="brew services restart php"
 
 # postgresql
 alias pgsqlstart="brew services start postgresql"
