@@ -26,5 +26,3 @@ source $HOME/.zsh-aliases
 export PATH="/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="./vendor/bin:$HOME/.composer/vendor/bin:$(brew --prefix php)/bin:$PATH"
 export PATH="$HOME/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-eval "$(gulp --completion=zsh)"
