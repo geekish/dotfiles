@@ -1,8 +1,6 @@
 # geekish/dotfiles
 
-My dotfiles. I hope to expand this to fully bootstrap new machines, both Mac and Linux, but for now it just serves as a central point for me to copy/paste configuration.
-
-#### Files
+## Files
 
 - `.composer/`
     - `cgr.json` - no actual function, just a reference to what I have installed using [cgr]
@@ -11,25 +9,22 @@ My dotfiles. I hope to expand this to fully bootstrap new machines, both Mac and
     - `crap.json` - used by [crap]
 - `bin/`
     - `project.sh` - creates a new PHP project from [league/skeleton]
+- `.editorconfig` - my root [editorconfig]
 - `.gitconfig` - git config
 - `.gitconfig.local` - stuff that belongs in `.gitconfig` but not in version control
-- `.gitignore.global` - my `.gitconfig` `excludesfile`
-- `.zshrc` - zsh config
+- `.gitignore.global` - my `.gitconfig` excludesfile
+- `.tmux.conf` - [tmux] config
+- `.zshrc` - [zsh] & [antigen] config
 - `.zshrc.local` - stuff that belongs in `.zshrc` but not in version control
 - `.zsh-aliases` - command aliases and globals, sourced in `.zshrc`
+- `Brewfile` - used to install brew casks and formulae, via [homebrew/bundle]
 
-`.gitignore` and `.editorconfig` are local to this repository.
-
-#### Todo
-
-- [ ] Add [Atom](//atom.io) configuration.
-- [ ] Install script of some sort. [Cider](//github.com/msanders/cider)? [Composer](//github.com/slbmeh/dotfiles)?
-
-#### Notes
-
-- Don't forget to include `--with-pear` when installing PHP via Homebrew. Should probably include `with-postgresql`. Might as well use `--without-apache` since, you know, I don't use Apache at all anymore.
-
-[cgr]: //github.com/consolidation/cgr
-[composer]: //getcomposer.org
-[crap]: //github.com/geekish/crap
-[league/skeleton]: http://github.com/thephpleague/skeleton
+[antigen]: https://github.com/zsh-users/antigen
+[cgr]: https://github.com/consolidation/cgr
+[composer]: https://getcomposer.org
+[crap]: https://github.com/geekish/crap
+[editorconfig]: https://editorconfig.org/
+[homebrew/bundle]: https://github.com/Homebrew/homebrew-bundle
+[league/skeleton]: https://github.com/thephpleague/skeleton
+[tmux]: https://github.com/tmux/tmux
+[zsh]: https://www.zsh.org/
