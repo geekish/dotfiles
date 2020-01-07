@@ -3,6 +3,7 @@
 [core]
   editor = atom --wait
   excludesfile = ~/.gitignore.global
+  quotepath = false
 [diff]
   tool = Kaleidoscope
 [difftool]
