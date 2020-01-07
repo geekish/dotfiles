@@ -20,8 +20,6 @@ alias rmdir="rm -rf" # don't be stupid
 # HOMEBREW
 ###############################################################################
 
-alias brewup="brew update && brew upgrade && brew cleanup"
-
 # dnsmasq
 alias masqstart="sudo brew services start dnsmasq"
 alias masqstop="sudo brew services stop dnsmasq"
@@ -48,19 +46,10 @@ alias pgsqlstop="brew services stop postgresql"
 alias pgsqlrestart="brew services restart postgresql"
 
 ###############################################################################
-# NETWORKING
-###############################################################################
-
-alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
-
-###############################################################################
 # PHP/COMPOSER
 ###############################################################################
 
 alias composer="noglob composer"
-# alias crap="noglob crap"
-
-alias composerup="composer self-update"
 alias dump="composer dumpautoload --optimize"
 alias project="composer create-project"
 alias require="composer require"
