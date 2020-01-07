@@ -62,9 +62,7 @@ cask 'virtualbox'
 
 # Drivers
 cask 'homebrew/cask-drivers/apple-hewlett-packard-printer-drivers'
-cask 'homebrew/cask-drivers/bose-updater'
 cask 'homebrew/cask-drivers/canon-eos-utility'
-cask 'homebrew/cask-drivers/dymo-label'
 cask 'homebrew/cask-drivers/logitech-unifying'
 cask 'homebrew/cask-drivers/sony-ps4-remote-play'
 cask 'homebrew/cask-drivers/wacom-tablet'
