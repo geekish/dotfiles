@@ -25,6 +25,13 @@ alias masqstart="sudo brew services start dnsmasq"
 alias masqstop="sudo brew services stop dnsmasq"
 alias masqrestart="sudo brew services restart dnsmasq"
 
+# gitea on the mac mini
+if [ "$(uname -n)" = "Wats0n.local" ]; then
+  alias teastart="launchctl start io.gitea.web"
+  alias teastop="launchctl stop io.gitea.web"
+  alias tearestart="teastop && teastart"
+fi
+
 # mysql
 alias mysqlstart="brew services start mysql"
 alias mysqlstop="brew services stop mysql"
@@ -54,9 +61,25 @@ alias dump="composer dumpautoload --optimize"
 alias project="composer create-project"
 alias require="composer require"
 
+alias a="artisan"
+alias art="artisan"
+alias artisan="noglob php artisan"
+
 ###############################################################################
 # MISCELLANEOUS
 ###############################################################################
 
+alias git="hub"
+alias tower="gittower"
 alias editcrontab="export VISUAL=nano; crontab -e"
 alias record="asciinema rec"
+
+_artisan_get_command_list () {
+  artisan --no-ansi | sed "1,/Available commands/d" | awk '/^ +[a-z]+/ { print $1 }'
+}
+
+_artisan () {
+  if [ -f artisan ]; then
+    compadd `_artisan_get_command_list`
+  fi
+}
