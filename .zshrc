@@ -21,7 +21,10 @@ if [[ -r ~/.zshrc.local ]]; then
   source ~/.zshrc.local
 fi
 
-source $HOME/.dotfiles/.zsh-aliases
+source $HOME/.dotfiles/zsh/aliases.zsh
+source $HOME/.dotfiles/zsh/artisan.zsh
+source $HOME/.dotfiles/zsh/homestead.zsh
+source $HOME/.dotfiles/zsh/services.zsh
 
 export PATH="/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="./vendor/bin:$HOME/.composer/vendor/bin:$(brew --prefix php)/bin:$PATH"
