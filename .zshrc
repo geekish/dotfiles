@@ -27,3 +27,4 @@ export PATH="/usr/local/bin:/usr/local/git/bin:/usr/local/sbin:/usr/bin:/bin:/us
 export PATH="./vendor/bin:$HOME/.composer/vendor/bin:$(brew --prefix php)/bin:$PATH"
 export PATH="$HOME/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export GPG_TTY=$(tty)
