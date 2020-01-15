@@ -1,8 +1,8 @@
 [include]
-  path = ~/.gitconfig.local # no sekrits 4 u
+  path = ~/.dotfiles/.gitconfig.local # no sekrits 4 u
 [core]
   editor = atom --wait
-  excludesfile = ~/.gitignore.global
+  excludesfile = ~/.dotfiles/.gitignore.global
   quotepath = false
 [diff]
   tool = Kaleidoscope
