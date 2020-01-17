@@ -1,5 +1,5 @@
 ; This file is for unifying the coding style for different editors and IDEs.
-; More information at http://editorconfig.org
+; More information at https://editorconfig.org
 
 root = true
 
@@ -14,5 +14,8 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 
-[*.php]
+[{composer.json,*.php}]
 indent_size = 4
+
+[*.blade.php]
+indent_size = 2
