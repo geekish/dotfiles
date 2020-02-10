@@ -1,27 +1,28 @@
-# macOS/Finder
+# macOS
 .DS_Store
 ._*
 .Spotlight-V100
 .Trashes
+
+# VCS
+.git
+.notes
 .trash
 
 # Log files
 *.log
 error_log
 
-# Node/Assets
-.sass-cache
-node_modules
-
-# PHP/PhpStorm
+# IDE
 .idea
-composer.phar
+.vscode
 
-# Python
+# Deps/PMs
+.sass-cache
+composer.phar
+node_modules
 *.pyc
 
 # Secrets
-.env
-
-# Version control
-.git
+.env*
+!.env.example
