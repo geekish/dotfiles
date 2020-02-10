@@ -1,5 +1,6 @@
 # Taps
 tap 'homebrew/cask'
+tap 'homebrew/cask-drivers'
 tap 'homebrew/services'
 
 # Essentials
@@ -13,6 +14,7 @@ brew 'wget'
 brew 'zsh'
 
 # Development
+cask 'jetbrains-toolbox'
 brew 'awscli'
 brew 'composer'
 brew 'git'
@@ -36,6 +38,7 @@ brew 'lftp'
 
 # Apps
 cask '1password'
+cask 'a-better-finder-rename'
 cask 'alfred'
 cask 'atom'
 cask 'bartender'
@@ -43,6 +46,8 @@ cask 'bettertouchtool'
 cask 'carbon-copy-cloner'
 cask 'coderunner'
 cask 'daisydisk'
+cask 'dash'
+cask 'discord'
 cask 'dropbox'
 cask 'evernote'
 cask 'firefox'
@@ -63,9 +68,8 @@ cask 'vlc'
 cask 'virtualbox'
 
 # Drivers
-cask 'homebrew/cask-drivers/apple-hewlett-packard-printer-drivers'
-cask 'homebrew/cask-drivers/canon-eos-utility'
-cask 'homebrew/cask-drivers/logitech-unifying'
-cask 'homebrew/cask-drivers/sony-ps4-remote-play'
-cask 'homebrew/cask-drivers/wacom-tablet'
-cask 'homebrew/cask-drivers/yubico-yubikey-piv-manager'
+cask 'apple-hewlett-packard-printer-drivers'
+cask 'canon-eos-utility'
+cask 'logitech-unifying'
+cask 'wacom-tablet'
+cask 'yubico-yubikey-piv-manager'
