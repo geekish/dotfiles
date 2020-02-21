@@ -8,6 +8,7 @@ if [ "$(uname)" = "Darwin" ]; then
   antigen bundle osx
 fi
 
+antigen bundle jessarcher/zsh-artisan
 antigen bundle rbirnie/oh-my-zsh-keybase keybase
 antigen bundle tmux
 antigen bundle zsh-users/zsh-autosuggestions
@@ -22,7 +23,6 @@ if [[ -r ~/.zshrc.local ]]; then
 fi
 
 source $HOME/.dotfiles/zsh/aliases.zsh
-source $HOME/.dotfiles/zsh/artisan.zsh
 source $HOME/.dotfiles/zsh/homestead.zsh
 source $HOME/.dotfiles/zsh/services.zsh
 source $HOME/.dotfiles/zsh/path.zsh
