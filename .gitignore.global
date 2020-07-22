@@ -16,12 +16,15 @@ error_log
 # IDE
 .idea
 .vscode
+.phpstorm.meta.php
+_ide_helper*.php
 
 # Deps/PMs
 .sass-cache
 composer.phar
 node_modules
 *.pyc
+.phpunit.result.cache
 
 # Secrets
 .env*
