@@ -22,6 +22,7 @@ alias dump="composer dumpautoload --optimize"
 alias project="composer create-project"
 alias require="composer require"
 
+alias art="artisan"
 alias tinker="artisan tinker"
 alias please="php please"
 
