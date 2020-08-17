@@ -27,5 +27,6 @@ source $HOME/.dotfiles/zsh/homestead.zsh
 source $HOME/.dotfiles/zsh/services.zsh
 source $HOME/.dotfiles/zsh/path.zsh
 
+export EDITOR='nano'
 export GPG_TTY=$(tty)
 export PHP_AUTOCONF=$(brew --prefix)/bin/autoconf

@@ -17,7 +17,7 @@ alias rmdir="rm -rf" # don't be stupid
 # PHP/COMPOSER
 ###############################################################################
 
-alias composer="noglob composer"
+alias composer="noglob /usr/local/bin/composer"
 alias dump="composer dumpautoload --optimize"
 alias project="composer create-project"
 alias require="composer require"
@@ -34,3 +34,4 @@ alias git="hub"
 alias tower="gittower"
 alias editcrontab="export VISUAL=nano; crontab -e"
 alias record="asciinema rec"
+alias mux=tmuxinator
