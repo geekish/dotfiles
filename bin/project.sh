@@ -12,5 +12,3 @@ rm -rf .git
 
 git init
 composer install
-
-atom .

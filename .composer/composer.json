@@ -1,11 +1,6 @@
 {
   "require": {
     "consolidation/cgr": "^2.0",
-    "hirak/prestissimo": "^0.3.7"
-  },
-  "config": {
-    "sort-packages": true
-  },
-  "minimum-stability": "beta",
-  "prefer-stable": true
+    "tightenco/takeout": "^1.1"
+  }
 }
