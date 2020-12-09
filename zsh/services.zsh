@@ -10,6 +10,10 @@ if [ "$(uname -n)" = "Wats0n.local" ]; then
   alias tearestart="teastop && teastart"
 fi
 
+alias mfstart="launchctl start app.miniflux.web"
+alias mfstop="launchctl stop app.miniflux.web"
+alias mfrestart="mfstop && mfstart"
+
 # mysql
 alias mysqlstart="brew services start mysql"
 alias mysqlstop="brew services stop mysql"

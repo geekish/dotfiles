@@ -25,3 +25,5 @@
   program = /usr/local/bin/gpg
 [commit]
   gpgsign = true
+[credential]
+  helper = osxkeychain
