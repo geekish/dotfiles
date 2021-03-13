@@ -17,6 +17,7 @@ brew 'zsh'
 # Development
 brew 'awscli'
 brew 'composer'
+brew 'fnm'
 brew 'git'
 brew 'go'
 brew 'hub'
