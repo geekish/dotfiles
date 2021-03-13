@@ -9,7 +9,6 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # node/npm/yarn
 export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH="$HOME/.dotfiles/bin:$PATH"
 
 # .dotfiles scripts
 export PATH="$HOME/.dotfiles/bin:$PATH"
