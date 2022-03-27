@@ -1,5 +1,3 @@
-alias reload="~/.zshrc"
-
 # FILE MANAGEMENT & NAVIGATION
 
 function cdl { cd "$1" && ls -aG; }
@@ -18,7 +16,7 @@ alias dump="composer dumpautoload --optimize"
 alias project="composer create-project"
 alias require="composer require"
 
-alias art="artisan"
+alias art="php artisan"
 alias please="php please"
 alias sail="bash vendor/bin/sail"
 
@@ -31,3 +29,4 @@ alias tower="gittower"
 alias editcrontab="export VISUAL=nano; crontab -e"
 alias record="asciinema rec"
 
+alias toolbox="~/toolbox/toolbox"

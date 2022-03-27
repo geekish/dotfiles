@@ -12,3 +12,6 @@ export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # .dotfiles scripts
 export PATH="$HOME/.dotfiles/bin:$PATH"
+
+export PATH="/usr/local/opt/php/bin:$PATH"
+export PATH="/usr/local/opt/php/sbin:$PATH"
