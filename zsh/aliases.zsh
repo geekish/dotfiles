@@ -30,3 +30,6 @@ alias editcrontab="export VISUAL=nano; crontab -e"
 alias record="asciinema rec"
 
 alias toolbox="~/toolbox/toolbox"
+
+alias twinit="npx tailwindcss init"
+function cra { npx create-react-app "$1" --template typescript; }
