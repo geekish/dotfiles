@@ -1,9 +1,0 @@
-[submodule "dracula/textmate"]
-	path = dracula/textmate
-	url = https://github.com/dracula/textmate.git
-[submodule "dracula/iterm"]
-	path = dracula/iterm
-	url = https://github.com/dracula/iterm.git
-[submodule "dracula/terminal-app"]
-	path = dracula/terminal-app
-	url = https://github.com/dracula/terminal.app.git
