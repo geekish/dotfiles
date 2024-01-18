@@ -10,14 +10,15 @@ alias rmdir="rm -rf" # don't be stupid
 
 # PHP: COMPOSER/LARAVEL
 
+alias sail="[ -f sail ] && sh sail || sh vendor/bin/sail"
 alias composer="noglob /usr/local/bin/composer"
 alias dump="composer dumpautoload --optimize"
 alias project="composer create-project"
 alias require="composer require"
 
 alias art="php artisan"
+alias artisan="php artisan"
 alias please="php please"
-alias sail="bash vendor/bin/sail"
 
 # MISC
 
