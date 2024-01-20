@@ -4,6 +4,9 @@
 .Spotlight-V100
 .Trashes
 
+# Windoze
+*:Zone.Identifier
+
 # VCS
 .git
 .notes
@@ -30,5 +33,4 @@ node_modules
 .env*
 !.env.example
 
-.Ulysses-Group.plist
-.Ulysses-Settings.plist
+.Ulysses-*.plist
