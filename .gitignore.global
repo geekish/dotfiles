@@ -27,6 +27,7 @@ _ide_helper*.php
 composer.phar
 node_modules
 *.pyc
+.phpunit.cache
 .phpunit.result.cache
 
 # Secrets
