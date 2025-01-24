@@ -24,3 +24,9 @@ alias twinit="pnpm dlx tailwindcss init -p --ts"
 
 alias shadcn="pnpm dlx shadcn-ui@latest"
 alias shadcn-vue="pnpm dlx shadcn-vue@latest"
+
+if [[ $(systemd-detect-virt) == "wsl" ]]; then
+  function code () {
+    /mnt/c/Users/Hannah/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code "$@";
+  }
+fi
