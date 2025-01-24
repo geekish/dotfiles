@@ -21,3 +21,6 @@ alias please="php please"
 # MISC
 alias editcrontab="export VISUAL=nano; crontab -e"
 alias twinit="pnpm dlx tailwindcss init -p --ts"
+
+alias shadcn="pnpm dlx shadcn-ui@latest"
+alias shadcn-vue="pnpm dlx shadcn-vue@latest"
