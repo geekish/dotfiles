@@ -13,17 +13,16 @@ alias composer="noglob /usr/local/bin/composer"
 alias dump="composer dumpautoload --optimize"
 alias project="composer create-project"
 alias require="composer require"
+alias laravel="~/.config/composer/vendor/bin/laravel"
 
 alias art="php artisan"
 alias artisan="php artisan"
 alias please="php please"
 
 # MISC
-alias editcrontab="export VISUAL=nano; crontab -e"
-alias twinit="pnpm dlx tailwindcss init -p --ts"
-
-alias shadcn="pnpm dlx shadcn-ui@latest"
+alias shadcn="pnpm dlx shadcn@latest"
 alias shadcn-vue="pnpm dlx shadcn-vue@latest"
+alias create-react-router="pnpm dlx create-react-router@latest"
 
 if [[ $(systemd-detect-virt) == "wsl" ]]; then
   function code () {
