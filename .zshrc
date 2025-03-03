@@ -1,12 +1,13 @@
-source ${ZDOTDIR:-~}/.antidote/antidote.zsh
+zstyle ':antidote:compatibility-mode' 'antibody' 'on'
+source $HOME/.antidote/antidote.zsh
 source <(antidote init)
 
 source $HOME/.dotfiles/zsh/omz.zsh
 
 antidote bundle zsh-users/zsh-autosuggestions
 antidote bundle zsh-users/zsh-completions
-antidote bundle zsh-users/zsh-history-substring-search
 antidote bundle zsh-users/zsh-syntax-highlighting
+antidote bundle zsh-users/zsh-history-substring-search
 antidote bundle jessarcher/zsh-artisan
 antidote bundle dracula/zsh
 
