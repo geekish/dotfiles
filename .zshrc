@@ -18,6 +18,7 @@ source $HOME/.dotfiles/zsh/aliases.zsh
 source $HOME/.dotfiles/zsh/path.zsh
 
 . "$HOME/.asdf/asdf.sh"
+. "$HOME/.cargo/env"
 
 source $HOME/.dotfiles/zsh/completions.zsh
 
