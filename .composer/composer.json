@@ -1,6 +1,0 @@
-{
-  "require": {
-    "consolidation/cgr": "^2.0",
-    "tightenco/takeout": "^1.1"
-  }
-}
