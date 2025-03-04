@@ -9,7 +9,6 @@ antidote bundle zsh-users/zsh-completions
 antidote bundle zsh-users/zsh-syntax-highlighting
 antidote bundle zsh-users/zsh-history-substring-search
 antidote bundle jessarcher/zsh-artisan
-antidote bundle dracula/zsh
 
 if [[ -r ~/.zshrc.local ]]; then
   source ~/.zshrc.local
@@ -34,3 +33,4 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+eval "$(starship init zsh)"
