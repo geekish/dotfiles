@@ -10,7 +10,6 @@ alias rmdir="rm -rf" # don't be stupid
 alias rmzi="rm -rf **/*Zone.Identifier" # thanks Windows
 
 # PHP: COMPOSER/LARAVEL
-alias sail="[ -f sail ] && sh sail || sh vendor/bin/sail"
 alias composer="noglob /usr/local/bin/composer"
 alias dump="composer dumpautoload --optimize"
 alias project="composer create-project"

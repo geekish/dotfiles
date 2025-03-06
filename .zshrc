@@ -24,7 +24,6 @@ source $HOME/.dotfiles/zsh/completions.zsh
 
 export EDITOR='nano'
 export GPG_TTY=$(tty)
-export SAIL_SKIP_CHECKS="true"
 
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
