@@ -28,6 +28,7 @@ node_modules
 *.pyc
 .phpunit.cache
 .phpunit.result.cache
+.nx
 
 # Secrets
 .env*

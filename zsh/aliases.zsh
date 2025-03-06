@@ -10,6 +10,7 @@ alias rmdir="rm -rf" # don't be stupid
 alias rmzi="rm -rf **/*Zone.Identifier" # thanks Windows
 
 # PHP: COMPOSER/LARAVEL
+alias actor="phpactor"
 alias composer="noglob /usr/local/bin/composer"
 alias dump="composer dumpautoload --optimize"
 alias project="composer create-project"
@@ -26,6 +27,7 @@ alias shadcn-canary="pnpm dlx shadcn@canary"
 alias shadcn-vue="pnpm dlx shadcn-vue@latest"
 alias create-react-router="pnpm dlx create-react-router@latest"
 alias create-turbo="pnpm dlx create-turbo@latest"
+alias jsr="pnpm dlx jsr"
 
 if [[ $(systemd-detect-virt) == "wsl" ]]; then
   function code () {
