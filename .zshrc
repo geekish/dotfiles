@@ -33,4 +33,6 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+[ -s "/home/hannah/.bun/_bun" ] && source "/home/hannah/.bun/_bun"
+
 eval "$(starship init zsh)"
