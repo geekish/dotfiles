@@ -1,5 +1,6 @@
 # FILE MANAGEMENT & NAVIGATION
 function cdl { cd "$1" && ls -aG; }
+function mkcd { mkdir "$1" && cd "$_" }
 alias chmod="chmod -Rv"
 alias chown="chown -Rv"
 alias chx="chmod a+x"
