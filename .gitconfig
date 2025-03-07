@@ -18,11 +18,11 @@
   cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustexitcode = true
 [user]
-  name = Hannah Warmbier
-  email = hannahwarmbier@gmail.com
+  name = Hannah Chartier
+  email = hannah@sent.com
   signingkey = 9B8651B4600C319DE248955F7F82CE3E62EEFED0
 [gpg]
-  program = /usr/local/bin/gpg
+  program = /usr/bin/gpg
 [commit]
   gpgsign = true
 [credential]
