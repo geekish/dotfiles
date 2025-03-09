@@ -1,21 +1,28 @@
 # geekish/dotfiles
 
-## Files
+These are my dotfiles.
+I use them on MacOS, Linux (Ubuntu Jammy), and recently, Windows & [WSL].
 
-- `.composer/`
-    - `composer.json` - global [composer].json, not much in here thanks to [cgr]
-- `.editorconfig` - my root [editorconfig]
-- `.gitconfig` - git config
-- `.gitconfig.local` - stuff that belongs in `.gitconfig` but not in version control
-- `.gitignore.global` - my `.gitconfig` excludesfile
-- `.tmux.conf` - [tmux] config that I don't really use anymore...
-- `.zshrc` - [zsh] config using [antidote]
-- `Brewfile` - used to install brew casks and formulae, via [homebrew/bundle]
+There's no installer or setup script (Brewfile is just for reference), I just clone this repo to `~/.dotfiles` and symlink files where they need to go.
+
+## Using
+
+- [zsh] with [antidote] & [Starship] prompt
+- [tmux] with [tpm] and [tmuxinator]
+- [Composer] for PHP
+- [PowerShell] thanks to my husband
+
+## License
+
+[WTFPL](https://choosealicense.com/licenses/wtfpl/). They're just dotfiles. 🤷‍♀️
 
 [antidote]: https://github.com/mattmc3/antidote
-[cgr]: https://github.com/consolidation/cgr
-[composer]: https://getcomposer.org
-[editorconfig]: https://editorconfig.org/
-[homebrew/bundle]: https://github.com/Homebrew/homebrew-bundle
+[Composer]: https://getcomposer.org
+[gist]: https://gist.github.com/geekish/ecb0e81f42e91f3e7813b537ff86a8f1
+[PowerShell]: https://docs.microsoft.com/en-us/powershell/
+[Starship]: https://starship.rs
 [tmux]: https://github.com/tmux/tmux
-[zsh]: https://www.zsh.org/
+[tmuxinator]: https://github.com/tmuxinator/tmuxinator
+[tpm]: https://github.com/tmux-plugins/tpm
+[WSL]: https://docs.microsoft.com/en-us/windows/wsl/
+[zsh]: https://github.com/robbyrussell/oh-my-zsh
