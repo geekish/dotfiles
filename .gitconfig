@@ -1,22 +1,21 @@
 [include]
-  path = ~/.dotfiles/.gitconfig.local # no sekrits 4 u
+  path = ~/.dotfiles/.gitconfig.local # secrets, trusted repos
 [core]
-  editor = atom --wait
+  editor = code --wait --new-window
   excludesfile = ~/.dotfiles/.gitignore.global
   quotepath = false
 [diff]
-  tool = Kaleidoscope
+  tool = vscode
 [difftool]
   prompt = false
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
-  tool = Kaleidoscope
+  tool = vscode
 [mergetool]
   prompt = false
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustexitcode = true
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
 [user]
   name = Hannah Chartier
   email = hannah@sent.com
@@ -25,8 +24,6 @@
   program = /usr/bin/gpg
 [commit]
   gpgsign = true
-[credential]
-  helper = osxkeychain
 [init]
   defaultBranch = main
 [credential "https://github.com"]
