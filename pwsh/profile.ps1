@@ -1,3 +1,6 @@
+$rustbin = "$HOME\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin"
+$env:Path += ";$rustbin"
+
 Set-Alias -Name php -Value $HOME\.config\herd\bin\php84\php.exe
 Set-Alias -Name touch -Value New-Item
 Set-Alias -Name which -Value where.exe
