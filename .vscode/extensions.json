@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "editorconfig.editorconfig",
+    "kdl-org.kdl-v1",
     "ms-vscode.powershell",
     "tamasfe.even-better-toml"
   ]
