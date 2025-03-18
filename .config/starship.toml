@@ -1,5 +1,6 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+format = "$shell$all"
 palette = "catppuccin_macchiato"
 
 [character]
@@ -40,3 +41,10 @@ surface0 = "#363a4f"
 base = "#24273a"
 mantle = "#1e2030"
 crust = "#181926"
+
+[shell]
+disabled = false
+bash_indicator = "󱆃"
+powershell_indicator = ""
+pwsh_indicator = ""
+zsh_indicator = "󰰶"
