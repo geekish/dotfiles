@@ -6,6 +6,13 @@ palette = "catppuccin_macchiato"
 success_symbol = "[[󰄛](green) ➜](peach)"
 error_symbol = "[[󰄛](red) ✗](peach)"
 
+[custom.laravel]
+command = "grep '\"name\": \"laravel/framework\"' -A1 composer.lock | tail -n 1 | awk -F '\"' '{print $4}'"
+detect_files = ['artisan']
+symbol = ' '
+style = 'bold fg:#ff2d20'
+format = 'via [$symbol($output )]($style)'
+
 [palettes.catppuccin_macchiato]
 rosewater = "#f4dbd6"
 flamingo = "#f0c6c6"
