@@ -1,0 +1,18 @@
+{
+    "require": {
+        "humbug/box": "^4.6",
+        "laravel/installer": "^5.13"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true
+        },
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.4.0"
+        },
+        "secure-http": true,
+        "sort-packages": true
+    }
+}
