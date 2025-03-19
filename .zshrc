@@ -1,5 +1,5 @@
 zstyle ':antidote:compatibility-mode' 'antibody' 'on'
-source $HOME/.antidote/antidote.zsh
+source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 source <(antidote init)
 
 source $HOME/.dotfiles/zsh/omz.zsh

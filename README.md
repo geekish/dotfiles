@@ -18,7 +18,6 @@ There's no installer or setup script (Brewfile is just for reference), I just cl
 
 [antidote]: https://github.com/mattmc3/antidote
 [Composer]: https://getcomposer.org
-[gist]: https://gist.github.com/geekish/ecb0e81f42e91f3e7813b537ff86a8f1
 [PowerShell]: https://docs.microsoft.com/en-us/powershell/
 [Starship]: https://starship.rs
 [tmux]: https://github.com/tmux/tmux
