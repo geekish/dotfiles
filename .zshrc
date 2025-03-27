@@ -10,6 +10,8 @@ antidote bundle zsh-users/zsh-syntax-highlighting
 antidote bundle zsh-users/zsh-history-substring-search
 antidote bundle jessarcher/zsh-artisan
 
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 if [[ -r ~/.zshrc.local ]]; then
   source ~/.zshrc.local
 fi
