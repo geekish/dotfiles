@@ -20,6 +20,7 @@ error_log
 .idea
 .phpstorm.meta.php
 _ide_helper*.php
+.favorites.json
 
 # Deps/PMs
 .sass-cache
