@@ -1,7 +1,8 @@
 {
     "require": {
         "humbug/box": "^4.6",
-        "laravel/installer": "^5.13"
+        "laravel/installer": "^5.13",
+        "phpstan/phpstan": "^2.1"
     },
     "config": {
         "allow-plugins": {
