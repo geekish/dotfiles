@@ -18,5 +18,6 @@ Set-Alias art runArtisanCommand
 function runPleaseCommand {& php please $args}
 Set-Alias please runPleaseCommand
 
+$env:STARSHIP_CONFIG = "$HOME\.dotfiles\.config\starship.toml"
 $starship = $IsWindows ? "C:\Program Files\starship\bin\starship.exe" : "/usr/local/bin/starship"
 Invoke-Expression (&$starship init powershell)
