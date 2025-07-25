@@ -11,6 +11,7 @@ antidote bundle zsh-users/zsh-history-substring-search
 antidote bundle jessarcher/zsh-artisan
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/mise activate zsh)"
 
 if [[ -r ~/.zshrc.local ]]; then
   source ~/.zshrc.local
@@ -19,7 +20,6 @@ fi
 source $HOME/.dotfiles/zsh/aliases.zsh
 source $HOME/.dotfiles/zsh/path.zsh
 
-. "$HOME/.asdf/asdf.sh"
 . "$HOME/.cargo/env"
 
 source $HOME/.dotfiles/zsh/completions.zsh
