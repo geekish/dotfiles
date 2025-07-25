@@ -1,0 +1,9 @@
+[tools]
+bun = "1.0.25"
+deno = "latest"
+node = "22"
+pnpm = "10"
+zellij = "latest"
+
+[settings]
+disable_backends = ["asdf"]
