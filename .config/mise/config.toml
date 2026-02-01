@@ -1,9 +1,10 @@
 [tools]
-bun = "1.0.25"
+bun = "latest"
 deno = "latest"
-node = "22"
+node = "24"
 pnpm = "10"
 zellij = "latest"
 
 [settings]
 disable_backends = ["asdf"]
+idiomatic_version_file_enable_tools = ["python"]
