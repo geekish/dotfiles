@@ -1,0 +1,72 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "display": {
+    "separator": " "
+  },
+  "modules": [
+    "title",
+    "separator",
+    {
+      "type": "os",
+      "key": " ",
+      "keyColor": "blue",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "host",
+      "key": " ",
+      "keyColor": "blue",
+      "format": "{name}"
+    },
+    {
+      "type": "shell",
+      "key": " ",
+      "keyColor": "blue",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "uptime",
+      "key": " ",
+      "keyColor": "blue",
+      "format": "{days}d {hours}h {minutes}m {seconds}s"
+    },
+    {
+      "type": "packages",
+      "key": " ",
+      "keyColor": "blue",
+      "format": "{?4}󰏖 {4}{?} {?17}󱄖 {17}{?} {?24} {24}{?}"
+    },
+    {
+      "type": "cpu",
+      "key": " ",
+      "keyColor": "blue",
+      "format": "Intel i5-12500H" // Hardcoded
+    },
+    // "gpu",
+    {
+      "type": "memory",
+      "key": " ",
+      "keyColor": "blue",
+      "format": "{used} / {total}"
+    },
+    {
+      "type": "disk",
+      "key": " ",
+      "keyColor": "blue",
+      "format": "{name} {filesystem} {size-used} / {size-total}"
+    },
+    "break",
+    {
+      "type": "localip",
+      "key": "󰩟 ",
+      "keyColor": "blue"
+    },
+    "battery",
+    "break",
+    {
+      "type": "colors",
+      "symbol": "circle"
+    },
+    "break"
+  ]
+}
