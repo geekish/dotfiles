@@ -1,0 +1,31 @@
+[mgr]
+show_hidden = true
+show_symlink = true
+
+[opener]
+code = [
+  { run = "code %s", orphan = true, for = "unix" },
+	{ run = '"/mnt/c/Users/Hannah/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code" %s', orphan = true, for = "windows" }
+]
+
+[open]
+prepend_rules = [
+  { url = "*.json,*.jsonc,*.yaml,*.yml,*.toml,*.ts,*.js,*.jsx,*.tsx,*.vue,*.html,*.css,.git*,*.ps1,*.svg,*.xml", use = "code" },
+]
+
+[[mgr.prepend_keymap]]
+on   = "!"
+for  = "unix"
+run  = 'shell "$SHELL" --block'
+desc = "Open $SHELL here"
+
+[[mgr.prepend_keymap]]
+on   = "!"
+for  = "windows"
+run  = 'shell "powershell.exe" --block'
+desc = "Open PowerShell here"
+
+[[input.prepend_keymap]]
+on   = "<Esc>"
+run  = "close"
+desc = "Cancel input"

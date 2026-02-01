@@ -2,3 +2,7 @@
 zsh/completions/*
 *.local
 !.gitkeep
+
+# because i'm dumb and I symlinked the whole folder
+.config/yazi/flavors
+.config/yazi/plugins
