@@ -11,9 +11,16 @@ error_symbol = "[[󰄛](red) ✗](peach)"
 [custom.laravel]
 command = "grep '\"name\": \"laravel/framework\"' -A1 composer.lock | tail -n 1 | awk -F '\"' '{print $4}'"
 detect_files = ['artisan']
-symbol = ' '
 style = 'bold fg:#ff2d20'
+symbol = ' '
 format = '[$symbol($output )]($style)'
+
+[custom.pnpm]
+command = 'pnpm -v'
+detect_files = ['pnpm-lock.yaml']
+style = 'bold fg:#f69220'
+symbol = ' '
+format = '[$symbol(v$output )]($style)'
 
 [dotnet]
 format = "[$symbol($version )]($style)"

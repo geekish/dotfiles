@@ -29,4 +29,4 @@
 [credential "https://github.com"]
   helper = !/usr/bin/gh auth git-credential
 [credential "https://gitlab.com"]
-	helper = !/home/linuxbrew/.linuxbrew/Cellar/glab/1.55.0/bin/glab auth git-credential
+	helper = !/home/linuxbrew/.linuxbrew/bin/glab auth git-credential

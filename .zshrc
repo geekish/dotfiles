@@ -24,6 +24,11 @@ source $HOME/.dotfiles/zsh/path.zsh
 
 source $HOME/.dotfiles/zsh/completions.zsh
 
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
+
+export PIPX_DEFAULT_PYTHON="$(brew --prefix)/bin/python3"
 export EDITOR='nano'
 export GPG_TTY=$(tty)
 

@@ -1,8 +1,12 @@
 [tools]
+biome = "2.4.13"
 bun = "latest"
 deno = "latest"
-node = "24"
+dyff = "latest"
+go = "latest"
+node = "25"
 pnpm = "10"
+vp = "latest"
 zellij = "latest"
 
 [settings]

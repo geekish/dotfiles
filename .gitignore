@@ -1,6 +1,7 @@
 .git/
 zsh/completions/*
 *.local
+*.local.*
 !.gitkeep
 
 # because i'm dumb and I symlinked the whole folder

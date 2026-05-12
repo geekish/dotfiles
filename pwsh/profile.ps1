@@ -18,6 +18,10 @@ Set-Alias art runArtisanCommand
 function runPleaseCommand {& php please $args}
 Set-Alias please runPleaseCommand
 
+function ln ([string]$target, [string]$symlink) {
+  New-Item -path "$symlink" -itemType SymbolicLink -value "$target"
+}
+
 $env:STARSHIP_CONFIG = "$HOME\.dotfiles\.config\starship.toml"
 $starship = $IsWindows ? "C:\Program Files\starship\bin\starship.exe" : "/usr/local/bin/starship"
 Invoke-Expression (&$starship init powershell)

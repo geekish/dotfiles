@@ -7,27 +7,15 @@ alias chx="chmod a+x"
 alias ls="ls -aG --color"
 alias mkdir="mkdir -p"
 alias rmdir="rm -rf" # don't be stupid
-alias rmzi="rm -rf **/*Zone.Identifier" # thanks Windows
+alias rmzi="find . -name '*:Zone.Identifier' -type f -delete" # thanks Windows
 
 # PHP: COMPOSER/LARAVEL
-alias actor="phpactor"
 alias composer="noglob /usr/local/bin/composer"
-alias dump="composer dumpautoload --optimize"
-alias project="composer create-project"
-alias require="composer require"
 alias laravel="~/.config/composer/vendor/bin/laravel"
 
 alias art="php artisan"
 alias artisan="php artisan"
 alias please="php please"
-
-# MISC
-alias shadcn="pnpm dlx shadcn@latest"
-alias shadcn-canary="pnpm dlx shadcn@canary"
-alias shadcn-vue="pnpm dlx shadcn-vue@latest"
-alias create-react-router="pnpm dlx create-react-router@latest"
-alias create-turbo="pnpm dlx create-turbo@latest"
-alias jsr="pnpm dlx jsr"
 
 if [[ $(systemd-detect-virt) == "wsl" ]]; then
   function code () {

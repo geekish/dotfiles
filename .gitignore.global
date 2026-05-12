@@ -36,4 +36,7 @@ mise.local.toml
 .env*
 !.env.example
 
-.Ulysses-*.plist
+# AI
+.claude/
+.claude/settings.local.json
+CLAUDE.local.md
