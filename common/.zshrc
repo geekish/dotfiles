@@ -2,7 +2,7 @@ zstyle ':antidote:compatibility-mode' 'antibody' 'on'
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 source <(antidote init)
 
-source $HOME/.dotfiles/zsh/omz.zsh
+source $HOME/.dotfiles/common/zsh/omz.zsh
 
 antidote bundle zsh-users/zsh-autosuggestions
 antidote bundle zsh-users/zsh-completions
@@ -17,12 +17,12 @@ if [[ -r ~/.zshrc.local ]]; then
   source ~/.zshrc.local
 fi
 
-source $HOME/.dotfiles/zsh/aliases.zsh
-source $HOME/.dotfiles/zsh/path.zsh
+source $HOME/.dotfiles/common/zsh/aliases.zsh
+source $HOME/.dotfiles/common/zsh/path.zsh
 
 . "$HOME/.cargo/env"
 
-source $HOME/.dotfiles/zsh/completions.zsh
+source $HOME/.dotfiles/common/zsh/completions.zsh
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
@@ -40,6 +40,6 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-[ -s "/home/hannah/.bun/_bun" ] && source "/home/hannah/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 eval "$(starship init zsh)"

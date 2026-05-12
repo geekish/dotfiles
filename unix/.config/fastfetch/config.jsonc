@@ -31,12 +31,6 @@
       "format": "{days}d {hours}h {minutes}m {seconds}s"
     },
     {
-      "type": "packages",
-      "key": " ",
-      "keyColor": "blue",
-      "format": "{?4}󰏖 {4}{?} {?17}󱄖 {17}{?} {?24} {24}{?}"
-    },
-    {
       "type": "cpu",
       "key": " ",
       "keyColor": "blue",

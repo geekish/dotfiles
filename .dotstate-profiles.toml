@@ -1,0 +1,31 @@
+version = 2
+
+[common]
+synced_files = [
+  ".config/claude/settings.json",
+  ".config/powershell/Microsoft.PowerShell_profile.ps1",
+  ".config/starship.toml",
+  ".editorconfig",
+  ".gitconfig",
+  ".gitignore",
+  ".zshrc",
+  ".zshrc.local",
+  "zsh/aliases.zsh",
+  "zsh/completions.zsh",
+  "zsh/completions/.gitkeep",
+  "zsh/completions/_phpactor",
+  "zsh/omz.zsh",
+  "zsh/path.zsh",
+]
+
+[[profiles]]
+name = "unix"
+synced_files = [
+  ".bashrc",
+  ".config/fastfetch/config.jsonc",
+  ".config/mise/config.toml",
+  ".config/yazi/package.toml",
+  ".config/yazi/theme.toml",
+  ".config/yazi/yazi.toml",
+]
+packages = []
